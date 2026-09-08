@@ -1,0 +1,166 @@
+/* Глобальный сброс и box-sizing по требованию */
+* {
+    box-sizing: border-box;
+}
+
+/* Настройка body как Flex-контейнера для прижатия футера (опционально, но полезно) */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ============ ШАПКА ============ */
+header {
+    background-color: #e9ecef;
+    padding: 40px 20px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.header-text h1, .header-text h2, .header-text p {
+    margin: 0;
+}
+
+/* ============ НАВИГАЦИЯ ============ */
+nav {
+    background-color: #343a40;
+    padding: 15px 0;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #17a2b8;
+    text-decoration: underline;
+}
+
+/* ============ ОСНОВНОЙ КОНТЕНТ ============ */
+main {
+    flex: 1; /* Занимает всё доступное пространство по высоте */
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+section h2 {
+    margin: 0;
+    border-bottom: 2px solid #17a2b8;
+    padding-bottom: 5px;
+    align-self: flex-start;
+}
+
+ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+/* ============ НАВЫКИ (ЧИПСЫ) ============ */
+.skills-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill {
+    background-color: #17a2b8;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* ============ ПОДВАЛ И КОНТАКТЫ ============ */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 40px 20px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+footer h2 {
+    margin: 0;
+}
+
+.contacts-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.contacts-list a {
+    color: #adb5bd;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.contacts-list a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
