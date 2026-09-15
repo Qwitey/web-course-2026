@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MNTN — Hiking Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <a class="logo" href="#">MNTN</a>
+
+    <nav class="main-nav" aria-label="Основная навигация">
+        <a href="#equipment">Equipment</a>
+        <a href="#about">About us</a>
+        <a href="#blog">Blog</a>
+    </nav>
+
+    <a class="account" href="#contact">
+        <span class="account-icon">◉</span>
+        Account
+    </a>
+
+    <button class="burger" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+    </button>
+</header>
+
+<main>
+    <section class="hero" id="blog">
+        <div class="hero-bg hero-bg-back"></div>
+        <div class="hero-bg hero-bg-middle"></div>
+        <div class="hero-bg hero-bg-front"></div>
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <div class="eyebrow"><span></span>A HIKING GUIDE</div>
+            <h1>Be prepared for the Mountains and beyond!</h1>
+            <a class="scroll-link" href="#equipment">scroll down <span>↓</span></a>
+        </div>
+
+        <div class="social">
+            <span>Follow us</span>
+            <a href="#">◎</a>
+            <a href="#">𝕏</a>
+        </div>
+
+        <div class="slider-nav" aria-hidden="true">
+            <span class="active">Start</span>
+            <span>01</span>
+            <span>02</span>
+            <span>03</span>
+        </div>
+    </section>
+
+    <section class="content-grid" id="equipment">
+
+        <article class="guide-card">
+            <div class="card-number">01</div>
+            <div class="card-text">
+                <div class="eyebrow"><span></span>GET STARTED</div>
+                <h2>What level of hiker are you?</h2>
+                <p>
+                    Whether you're a beginner or an experienced trekker, understanding
+                    your level helps you choose the right trail. Start with realistic
+                    goals, prepare your equipment and learn to read the mountain.
+                </p>
+                <a class="read-more" href="#">read more <span>→</span></a>
+            </div>
+            <div class="card-image image-one" role="img" aria-label="Hiker in the mountains"></div>
+        </article>
+
+        <article class="guide-card reverse" id="about">
+            <div class="card-number">02</div>
+            <div class="card-text">
+                <div class="eyebrow"><span></span>HIKING ESSENTIALS</div>
+                <h2>Picking the right Hiking Gear!</h2>
+                <p>
+                    The right equipment makes a long day outside safer and more
+                    comfortable. Learn which layers, shoes and navigation tools
+                    deserve a place in your backpack.
+                </p>
+                <a class="read-more" href="#">read more <span>→</span></a>
+            </div>
+            <div class="card-image image-two" role="img" aria-label="Mountain hiking landscape"></div>
+        </article>
+
+        <article class="guide-card">
+            <div class="card-number">03</div>
+            <div class="card-text">
+                <div class="eyebrow"><span></span>WHERE YOU GO IS THE KEY</div>
+                <h2>Understand Your Map & Timing</h2>
+                <p>
+                    Knowing where you are and how much daylight remains is one of
+                    the most important hiking skills. Plan the route before you go
+                    and always leave enough time for the return journey.
+                </p>
+                <a class="read-more" href="#">read more <span>→</span></a>
+            </div>
+            <div class="card-image image-three" role="img" aria-label="Hiker looking at mountains"></div>
+        </article>
+
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="contact-copy">
+            <div class="eyebrow"><span></span>CONTACT</div>
+            <h2>Tell us about your next adventure.</h2>
+            <p>Have a question about hiking, gear or the route? Send us a message.</p>
+        </div>
+
+        <form class="contact-form">
+            <label>
+                Имя
+                <input type="text" name="name" placeholder="Ваше имя">
+            </label>
+            <label>
+                Email
+                <input type="email" name="email" placeholder="you@example.com">
+            </label>
+            <label>
+                Сообщение
+                <textarea name="message" rows="5" placeholder="Ваше сообщение"></textarea>
+            </label>
+            <button type="submit">Отправить</button>
+        </form>
+    </section>
+</main>
+
+<footer class="footer">
+    <div>
+        <a class="logo" href="#">MNTN</a>
+        <p>Get out there & discover your next slope, mountain & destination!</p>
+        <small>Copyright 2026 MNTN</small>
+    </div>
+
+    <div class="footer-column">
+        <h3>More on The Blog</h3>
+        <a href="#">About MNTN</a>
+        <a href="#">Contributors & Writers</a>
+        <a href="#">Write For Us</a>
+        <a href="#">Contact Us</a>
+    </div>
+
+    <div class="footer-column">
+        <h3>More on MNTN</h3>
+        <a href="#">The Team</a>
+        <a href="#">Jobs</a>
+        <a href="#">Press</a>
+    </div>
+</footer>
+
+</body>
+</html>
