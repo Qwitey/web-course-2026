@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лабораторная №5 — Саймон</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="game">
+    <h1>Саймон</h1>
+
+    <p class="status" id="status" aria-live="polite">
+      Нажмите «Старт», чтобы начать
+    </p>
+
+    <!-- 4 сектора: сетка 2×2, скруглённые в четверть круга -->
+    <div class="board" id="board" role="group" aria-label="Игровое поле">
+      <button type="button" class="pad" data-index="0" aria-label="Зелёный сектор"></button>
+      <button type="button" class="pad" data-index="1" aria-label="Красный сектор"></button>
+      <button type="button" class="pad" data-index="2" aria-label="Жёлтый сектор"></button>
+      <button type="button" class="pad" data-index="3" aria-label="Синий сектор"></button>
+    </div>
+
+    <div class="panel">
+      <p class="level">Уровень: <span id="level">0</span></p>
+      <button type="button" class="start-btn" id="start-btn">Старт</button>
+    </div>
+  </main>
+</body>
+</html>
