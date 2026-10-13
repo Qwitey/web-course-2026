@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лабораторная №6 — Змейка</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="game">
+    <h1>Змейка</h1>
+
+    <div class="hud">
+      <span class="hud__item">Счёт: <b id="score">0</b></span>
+      <span class="hud__item">Рекорд: <b id="best">0</b></span>
+      <span class="hud__item">Поле: <b id="field">20×20</b></span>
+      <span class="hud__item">Скорость: <b id="speed">1.0×</b></span>
+    </div>
+
+    <!-- Настройки партии. Применяются при нажатии «Старт» -->
+    <div class="settings" id="settings">
+      <label class="setting">
+        <span class="setting__label">Размер поля</span>
+        <select id="size-select" class="setting__select">
+          <option value="10">10 × 10</option>
+          <option value="15">15 × 15</option>
+          <option value="20" selected>20 × 20</option>
+          <option value="25">25 × 25</option>
+          <option value="30">30 × 30</option>
+        </select>
+      </label>
+
+      <label class="setting">
+        <span class="setting__label">Яблок на поле</span>
+        <select id="apples-select" class="setting__select">
+          <option value="1" selected>1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="5">5</option>
+          <option value="8">8</option>
+        </select>
+      </label>
+    </div>
+
+    <div class="canvas-wrap">
+      <canvas id="canvas" width="400" height="400"></canvas>
+    </div>
+
+    <div class="controls">
+      <button type="button" id="restart" class="btn">Начать</button>
+    </div>
+
+    <p class="hint">
+      Управление: <kbd>←</kbd> <kbd>↑</kbd> <kbd>↓</kbd> <kbd>→</kbd>,
+      перезапуск — <kbd>Space</kbd>
+    </p>
+  </main>
+</body>
+</html>
