@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+}
+
+.container {
+    width: min(750px, 92%);
+    margin: 60px auto;
+    padding: 32px;
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+h1 {
+    margin: 0 0 25px;
+    text-align: center;
+    font-size: 32px;
+}
+
+.todo-form {
+    display: flex;
+    gap: 10px;
+}
+
+.todo-form input {
+    flex: 1;
+    padding: 14px 16px;
+    font-size: 16px;
+    color: #e2e8f0;
+    background: #0f172a;
+    border: 1px solid #475569;
+    border-radius: 10px;
+    outline: none;
+}
+
+.todo-form input:focus {
+    border-color: #8b5cf6;
+    box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.15);
+}
+
+.todo-form button {
+    padding: 14px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #8b5cf6;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.todo-form button:hover {
+    background: #7c3aed;
+    transform: translateY(-1px);
+}
+
+.counter {
+    margin: 22px 0 16px;
+    font-weight: bold;
+    color: #cbd5e1;
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    padding: 9px 15px;
+    border: 1px solid #475569;
+    border-radius: 8px;
+    background: #0f172a;
+    color: #cbd5e1;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.filter-btn:hover {
+    border-color: #8b5cf6;
+}
+
+.filter-btn.active {
+    background: #8b5cf6;
+    border-color: #8b5cf6;
+    color: white;
+}
+
+.todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-bottom: 12px;
+    padding: 15px 16px;
+
+    background: #0f172a;
+    border-radius: 12px;
+
+    border-left: 6px solid #facc15;
+
+    transition: 0.2s;
+}
+
+.todo-item:hover {
+    transform: translateX(3px);
+}
+
+/* В процессе */
+.todo-item.in-progress {
+    border-left-color: #facc15;
+}
+
+/* Выполнено */
+.todo-item.done {
+    border-left-color: #22c55e;
+    background: #0f2418;
+}
+
+/* Провалено */
+.todo-item.failed {
+    border-left-color: #ef4444;
+    background: #2a1517;
+}
+
+.todo-text {
+    flex: 1;
+    font-size: 16px;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.status-buttons {
+    display: flex;
+    gap: 6px;
+}
+
+.status-btn,
+.delete-btn {
+    padding: 7px 10px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.status-btn {
+    background: #334155;
+    color: #e2e8f0;
+}
+
+.status-btn:hover {
+    background: #475569;
+}
+
+.delete-btn {
+    background: #7f1d1d;
+    color: #fecaca;
+}
+
+.delete-btn:hover {
+    background: #991b1b;
+}

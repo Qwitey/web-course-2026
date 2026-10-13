@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Todo List</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>Todo List</h1>
+
+        <form id="todoForm" class="todo-form">
+            <input
+                type="text"
+                id="todoInput"
+                placeholder="Введите новую задачу"
+            >
+
+            <button type="submit">Добавить</button>
+        </form>
+
+        <p id="counter" class="counter">
+            Осталось: 0, Выполнено: 0
+        </p>
+
+        <div class="filters">
+            <button type="button" class="filter-btn active" data-filter="all">
+                Все
+            </button>
+
+            <button type="button" class="filter-btn" data-filter="active">
+                Активные
+            </button>
+
+            <button type="button" class="filter-btn" data-filter="completed">
+                Завершённые
+            </button>
+        </div>
+
+        <ul id="todoList" class="todo-list"></ul>
+
+    </main>
+
+</body>
+</html>
