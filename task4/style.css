@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+}
+
+.container {
+    width: min(750px, 92%);
+    margin: 60px auto;
+    padding: 32px;
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+h1 {
+    margin: 0 0 10px;
+    text-align: center;
+    font-size: 32px;
+}
+
+.description {
+    text-align: center;
+    color: #94a3b8;
+    margin-bottom: 30px;
+}
+
+.game-controls {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.game-controls input {
+    flex: 1;
+    min-width: 180px;
+    padding: 14px 16px;
+    font-size: 18px;
+    color: #e2e8f0;
+    background: #0f172a;
+    border: 1px solid #475569;
+    border-radius: 10px;
+    outline: none;
+    letter-spacing: 4px;
+}
+
+.game-controls input:focus {
+    border-color: #8b5cf6;
+    box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.15);
+}
+
+.game-controls button {
+    padding: 14px 18px;
+    border: none;
+    border-radius: 10px;
+    background: #8b5cf6;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.game-controls button:hover {
+    background: #7c3aed;
+    transform: translateY(-1px);
+}
+
+.game-controls button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.new-game-btn {
+    background: #334155 !important;
+}
+
+.new-game-btn:hover {
+    background: #475569 !important;
+}
+
+.message {
+    min-height: 24px;
+    margin: 20px 0 10px;
+    font-weight: bold;
+}
+
+.message.error {
+    color: #f87171;
+}
+
+.message.success {
+    color: #4ade80;
+}
+
+.stats {
+    margin: 10px 0 25px;
+    color: #cbd5e1;
+    font-weight: bold;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+.history-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.history-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 14px 16px;
+    margin-bottom: 10px;
+
+    background: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 10px;
+}
+
+.guess {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.result {
+    color: #cbd5e1;
+}

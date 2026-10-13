@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Быки и коровы</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>🐂 Быки и коровы 🐄</h1>
+
+        <p class="description">
+            Угадайте 4 цифры. Все цифры в загаданном числе разные.
+        </p>
+
+        <div class="game-controls">
+            <input
+                type="text"
+                id="guessInput"
+                maxlength="4"
+                inputmode="numeric"
+                placeholder="Введите 4 цифры"
+            >
+
+            <button id="checkButton" type="button">
+                Проверить
+            </button>
+
+            <button id="newGameButton" class="new-game-btn" type="button">
+                Новая игра
+            </button>
+        </div>
+
+        <p id="message" class="message"></p>
+
+        <div class="stats">
+            Попыток: <span id="attemptsCount">0</span>
+        </div>
+
+        <h2>История попыток</h2>
+
+        <ul id="historyList" class="history-list"></ul>
+
+    </main>
+
+</body>
+</html>
