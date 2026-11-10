@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лаба 7: Бесконечный скролл</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="controls">
+        <input type="text" id="search-input" placeholder="Поиск по заголовку...">
+    </div>
+
+    <div id="posts-container" class="posts-grid"></div>
+
+    <!-- Индикатор загрузки -->
+    <div id="loader" class="loader hidden">Загрузка...</div>
+
+    <!-- Сообщение об ошибке или конце данных -->
+    <div id="message" class="message hidden"></div>
+
+    <!-- Элемент-маркер для IntersectionObserver -->
+    <div id="sentinel"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
